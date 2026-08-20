@@ -16,6 +16,7 @@ class Conta():
 # inicio do programa
 # criando as intancias do objeto
 
+# cria avariavel para chamar a função com a classe
 vica_cc = Conta()
 pedro_cc = Conta()
 haroldo_cc = Conta()
