@@ -26,13 +26,22 @@ class Receita ():
               f'{self.iogurte_colheres} colheres de sopa de iogurte natural.\n'
               f'Que rendem {self.rendimento} porção individual, que levam {self.tempo_prep} min de preparo.')
 
-    def calc_porcao(self, nova_porcao):
-        tempo_prep = self.tempo_prep * nova_porcao
-        manga_g = self.manga_g * nova_porcao
-        maracuja_un = self.maracuja_un * nova_porcao
-        iogurte_colheres = self.iogurte_colheres * nova_porcao
-        renfimento = self.rendimento * nova_porcao
+    def calc_porcao(self):
+        nova_porcao = int(input("Digite quantas porções você irá fazer: "))
+        self.tempo_prep *= nova_porcao
+        self.manga_g *= nova_porcao
+        self.maracuja_un *= nova_porcao
+        self.iogurte_colheres *= nova_porcao
+        self.rendimento *= nova_porcao
+
+        print(f'Para {nova_porcao} porções serão necessários:\n'
+              f'{self.manga_g} g de manga.\n'
+              f'{self.maracuja_un} unidades de maracujá.\n'
+              f'{self.iogurte_colheres} colheres de sopa de iogurte.\n'
+              f'Com tempo de preparo de {self.tempo_prep} minutos.'
+              )
 
 
 gelato = Receita()
 gelato.receitabase()
+gelato.calc_porcao()
