@@ -1,5 +1,3 @@
-
-
 class Calca:
 
     def __init__(self, cor, tamanho, preco, qtd_estoque, tecido):
@@ -26,4 +24,3 @@ pants = Calca('Azul','G',285, 285, 'jeans')
 
 pants.exibir_informacoes()
 pants.aplica_desconto()
-

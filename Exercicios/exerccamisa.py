@@ -37,11 +37,7 @@ class Camiseta:
 
 
 
-# 3. Implemente os seguintes métodos na classe:
-# exibir_informacoes(): Mostra na tela todos os dados da camisa de forma organizada.
-# ○ vender(quantidade): Recebe a quantidade de peças a serem vendidas. Se houver
-# estoque suficiente, realiza a subtração e exibe o estoque restante; caso contrário, exibe
-# uma mensagem avisando que o estoque é insuficiente
+
 
 shirt = Camiseta('Azul', 'M', 89.90, 'Normal', 75)
 
