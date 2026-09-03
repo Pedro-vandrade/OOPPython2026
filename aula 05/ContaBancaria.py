@@ -10,7 +10,7 @@ class ContaBancaria():
 
     def depositar(self):
         deposito = float(input("Digite o valor a ser depositado: "))
-        self.saldo =+ deposito
+        self.saldo += deposito
         if deposito <= 0:
             print('Digite um valor maior que zero.')
 
