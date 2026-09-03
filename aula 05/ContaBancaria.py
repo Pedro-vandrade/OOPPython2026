@@ -29,7 +29,9 @@ class ContaBancaria():
 num = int(input('Digite o numero da conta : '))
 nome = input('Titular da conta: ')
 
-contabanco = ContaBancaria(num, nome, 0)
+contabanco = ContaBancaria(num, nome, 200)
+contabanco.exibirConta()
 contabanco.depositar()
 contabanco.exibirConta()
+contabanco.saque()
 contabanco.saque()
