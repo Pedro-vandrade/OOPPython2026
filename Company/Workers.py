@@ -25,7 +25,7 @@ def registry():
 
 
 
-
+# lista
 employes = []
 
 emp1 = registry()
